@@ -10,7 +10,7 @@ export const contactFormSchema = z.object({
 
 
 const ContactMe = () => {
-    const { register, handleSubmit } = useForm<z.infer<typeof contactFormSchema>>({
+    const { handleSubmit } = useForm<z.infer<typeof contactFormSchema>>({
         resolver: zodResolver(contactFormSchema),
       });
       const onSubmit = (data: z.infer<typeof contactFormSchema>) => {

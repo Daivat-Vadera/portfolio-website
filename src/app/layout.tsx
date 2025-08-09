@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Sora, Ms_Madi } from "next/font/google";
 import "./globals.css";
 import Header from "@/Components/Header";
+import Script from "next/script";
 
 const sora = Sora({
   variable: "--font-sora",
@@ -27,10 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
+        <Script
+          strategy="afterInteractive"
           src="https://kit.fontawesome.com/8a4ea76776.js"
           crossOrigin="anonymous"
-        ></script>
+        />
       </head>
       <body className={`${sora.variable} ${ms_madi.variable} antialiased`}>
         <Header />
