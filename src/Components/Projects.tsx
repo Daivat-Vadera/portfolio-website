@@ -38,9 +38,9 @@ const Projects = () => {
                           Crypto Screener Application
                         </h3>
                         <p className="text-zinc-300 font-normal text-base leading-6 !mt-0">
-                          I'm Evren Shah Lorem Ipsum is simply dummy text of the
+                          I&apos;mm Evren Shah Lorem Ipsum is simply dummy text of the
                           printing and typesetting industry. Lorem Ipsum has
-                          been the industry's standard dummy text ever since the
+                          been the industry&apos;ms standard dummy text ever since the
                           1500s, when an unknown printer took a galley of type
                           and scrambled it to specimen book.
                         </p>
@@ -90,9 +90,9 @@ const Projects = () => {
                           Euphoria - Ecommerce (Apparels) Website Template
                         </h3>
                         <p className="text-zinc-300 font-normal text-base leading-6 !mt-0">
-                          I'm Evren Shah Lorem Ipsum is simply dummy text of the
+                          I&apos;mm Evren Shah Lorem Ipsum is simply dummy text of the
                           printing and typesetting industry. Lorem Ipsum has
-                          been the industry's standard dummy text ever since the
+                          been the industry&apos;ms standard dummy text ever since the
                           1500s, when an unknown printer took a galley of type
                           and scrambled it to specimen book. when an unknown
                           printer took a galley of type and scrambled it to
@@ -144,9 +144,9 @@ const Projects = () => {
                           Blog Website Template
                         </h3>
                         <p className="text-zinc-300 font-normal text-base leading-6 !mt-0">
-                          I'm Evren Shah Lorem Ipsum is simply dummy text of the
+                          I&apos;mm Evren Shah Lorem Ipsum is simply dummy text of the
                           printing and typesetting industry. Lorem Ipsum has
-                          been the industry's standard dummy text ever since the
+                          been the industry&apos;ms standard dummy text ever since the
                           1500s, when an unknown printer took a galley of type
                           and scrambled it to specimen book.
                         </p>
