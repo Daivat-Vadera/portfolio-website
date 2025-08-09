@@ -1,26 +1,56 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@plugin "daisyui" {
+  themes: light --default;
+  root: ":root";
+  include: ;
+  exclude: ;
+  prefix: ;
+  logs: true;
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --font-sora: var(--font-sora);
+  --font-ms-madi: var(--font-ms-madi);
+  --color-zinc-100: #f4f4f5;
+  --color-zinc-200: #e4e4e7;
+  --color-zinc-300: #d4d4d8;
+  --color-zinc-500: #71717a;
+  --color-zinc-800: #27272a;
+  --color-neutral: #404040;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-white font-sora;
+}
+.inner-wrap {
+  @apply py-[60px];
+}
+.outline-heading {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
+  /* -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--Primary-Black, #000); */
+}
+
+.text-stroke {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: transparent;
+  -webkit-text-stroke: 6px #000;
+  text-stroke: 6px #000;
+}
+.text-fill {
+  /* sits on top of the stroke */
+  position: relative;
+  color: #ffffff; /* your Figma fill color */
+}
+.title-wrap h2 {
+  @apply text-[28px] sm:text-5xl font-normal leading-8 sm:leading-14 py-5;
+}
+p {
+  @apply mt-5 first:mt-0;
+}
+.content-wrap {
+  @apply mt-5;
+}
+.skill-item:hover svg path {
+  fill: white;
 }
