@@ -102,9 +102,7 @@ const ContactMe = () => {
               </div>
               <div className="content-wrap">
                 <p className="description text-base font-normal text-zinc-500 mt-8">
-                  I seek to push the limits of creativity to create
-                  high-engaging, user-friendly, and memorable interactive
-                  experiences.
+                Looking to hire a Full Stack Developer for a project or long-term role? Tell me about the scope, timeline, and budget — I&apos;ll review and get back with next steps and availability.
                 </p>
                 <div className="mt-10 flex flex-col gap-4">
                   <a

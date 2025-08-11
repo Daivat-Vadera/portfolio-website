@@ -9,7 +9,7 @@ const HeroBanner = () => {
             <div className="w-full lg:w-5/12 order-2 lg:order-1 mt-12 lg:mt-0">
               <div className="title">
                 <h1 className="font-normal text-[28px] sm:text-5xl  leading-8 sm:leading-14">
-                  Hi, I&apos;mm <span className="font-extrabold">Daivat Vadera.</span>
+                  Hi, I&apos;m <span className="font-extrabold">Daivat Vadera.</span>
                 </h1>
                 <h1 className="font-normal text-[28px] sm:text-5xl mt-5 leading-8 sm:leading-14">
                   <span className="font-extrabold">Full Stack</span>{" "}
@@ -24,11 +24,7 @@ const HeroBanner = () => {
                 </h1>
               </div>
               <p className="description text-base font-normal text-zinc-500 mt-8">
-                I&apos;mm Daivat Vadera Lorem Ipsum is simply dummy text of the
-                printing and typesetting industry. Lorem Ipsum has been the
-                industry&apos;ms standard dummy text ever since the 1500s, when an
-                unknown printer took a galley of type and scrambled it to
-                specimen book.
+              I build polished user interfaces and reliable backends—turning ideas into production-ready web apps focused on performance and accessibility.
               </p>
               <div className="flex items-center justify-start gap-4 mt-4">
                 <div className="linkedin-icon">
