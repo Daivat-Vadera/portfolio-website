@@ -41,7 +41,7 @@ const ContactMe = () => {
   return (
     <section className="text-left" id="contact-me">
       <div className="inner-wrap">
-        <div className="container mx-auto">
+        <div className="container mx-auto px-8">
           <div className="flex items-center justify-center gap-12 px-8 lg:px-0 flex-col lg:flex-row">
             <div className="w-full lg:w-6/12">
               <form action="" className="flex flex-col gap-6" onSubmit={handleSubmit(onSubmit)}>
