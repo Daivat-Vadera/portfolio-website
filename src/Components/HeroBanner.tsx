@@ -26,7 +26,8 @@ const HeroBanner = () => {
               <p className="description text-base font-normal text-zinc-500 mt-8">
               I build polished user interfaces and reliable backends—turning ideas into production-ready web apps focused on performance and accessibility.
               </p>
-              <div className="flex items-center justify-start gap-4 mt-4">
+              <div className="flex items-center justify-between gap-4 mt-4">
+                <div className="flex items-center gap-2">
                 <div className="linkedin-icon">
                   <a
                     href="https://www.linkedin.com/in/daivat-vadera-090647117"
@@ -62,6 +63,29 @@ const HeroBanner = () => {
                     </svg>
                   </a>
                 </div>
+                </div>
+                 <div>
+                 <a target="_blank" href="../../Resume.pdf" className="btn btn-neutral text-base-100 lg:text-xl text-base leading-6 lg:py-4 py-2 lg:px-5 px-3 h-auto rounded-sm hover:bg-zinc-500 hover:border-zinc-500 md:hidden inline-block mt-4">
+                            Resume{" "}
+                            <span className="ml-2 inline-block vertical-align-middle  ">
+                              <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M17.5 12.5V13.5C17.5 14.9001 17.5 15.6002 17.2275 16.135C16.9878 16.6054 16.6054 16.9878 16.135 17.2275C15.6002 17.5 14.9001 17.5 13.5 17.5H6.5C5.09987 17.5 4.3998 17.5 3.86502 17.2275C3.39462 16.9878 3.01217 16.6054 2.77248 16.135C2.5 15.6002 2.5 14.9001 2.5 13.5V12.5M14.1667 8.33333L10 12.5M10 12.5L5.83333 8.33333M10 12.5V2.5"
+                                  stroke="white"
+                                  strokeWidth="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                />
+                              </svg>
+                            </span>
+                          </a>
+              </div>
               </div>
             </div>
             <div className="w-full lg:w-7/12 order-1 lg:order-2">
