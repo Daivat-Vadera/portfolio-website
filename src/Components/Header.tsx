@@ -3,43 +3,46 @@ import { useState } from "react";
 import { scrollToSection } from "@/utils/smoothScroll";
 const Header = () => {
   const [activeLink, setActiveLink] = useState("");
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, section: string) => {
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    section: string
+  ) => {
     setActiveLink(section);
     scrollToSection(e);
   };
   return (
-    <div className="container mx-auto fixed top-0 left-0 right-0 z-50 max-w-full">
-      <div className="navbar bg-base-100 shadow-none px-8 py-6">
-        <div className="navbar-start">
-          <div className="dropdown">
+    <div className='container mx-auto fixed top-0 left-0 right-0 z-50 max-w-full'>
+      <div className='navbar bg-base-100 shadow-none px-8 py-6'>
+        <div className='navbar-start'>
+          <div className='dropdown'>
             <div
               tabIndex={0}
-              role="button"
-              className="btn btn-ghost lg:hidden hover:bg-transparent"
+              role='button'
+              className='btn btn-ghost lg:hidden hover:bg-transparent'
             >
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+                xmlns='http://www.w3.org/2000/svg'
+                className='h-5 w-5'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
               >
                 {" "}
                 <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
+                  d='M4 6h16M4 12h8m-8 6h16'
                 />{" "}
               </svg>
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow gap-2"
+              className='menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow gap-2'
             >
               <li>
                 <a
-                  href="#skills"
+                  href='#skills'
                   onClick={(e) => handleNavClick(e, "skills")}
                   className={
                     activeLink === "skills"
@@ -52,7 +55,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="#experience"
+                  href='#experience'
                   onClick={(e) => handleNavClick(e, "experience")}
                   className={
                     activeLink === "experience"
@@ -65,7 +68,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="#about-me"
+                  href='#about-me'
                   onClick={(e) => handleNavClick(e, "about-me")}
                   className={
                     activeLink === "about-me"
@@ -78,7 +81,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="#projects"
+                  href='#projects'
                   onClick={(e) => handleNavClick(e, "projects")}
                   className={
                     activeLink === "projects"
@@ -91,7 +94,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="#contact-me"
+                  href='#contact-me'
                   onClick={(e) => handleNavClick(e, "contact-me")}
                   className={
                     activeLink === "contact-me"
@@ -105,18 +108,18 @@ const Header = () => {
             </ul>
           </div>
           <a
-            href="#home"
-            className="btn btn-ghost text-4xl xl:text-5xl 2xl:text-6xl font-ms-madi hover:bg-transparent hover:outline-none hover:border-none hover:shadow-none"
+            href='#home'
+            className='btn btn-ghost text-4xl xl:text-5xl 2xl:text-6xl font-ms-madi hover:bg-transparent hover:outline-none hover:border-none hover:shadow-none'
             onClick={(e) => handleNavClick(e, "home")}
           >
             Daivat Vadera
           </a>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 gap-2">
+        <div className='navbar-center hidden lg:flex'>
+          <ul className='menu menu-horizontal px-1 gap-2'>
             <li>
               <a
-                href="#skills"
+                href='#skills'
                 onClick={(e) => handleNavClick(e, "skills")}
                 className={
                   activeLink === "skills"
@@ -130,7 +133,7 @@ const Header = () => {
 
             <li>
               <a
-                href="#experience"
+                href='#experience'
                 onClick={(e) => handleNavClick(e, "experience")}
                 className={
                   activeLink === "experience"
@@ -143,7 +146,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="#about-me"
+                href='#about-me'
                 onClick={(e) => handleNavClick(e, "about-me")}
                 className={
                   activeLink === "about-me"
@@ -156,7 +159,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="#projects"
+                href='#projects'
                 onClick={(e) => handleNavClick(e, "projects")}
                 className={
                   activeLink === "projects"
@@ -169,7 +172,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="#contact-me"
+                href='#contact-me'
                 onClick={(e) => handleNavClick(e, "contact-me")}
                 className={
                   activeLink === "contact-me"
@@ -182,23 +185,27 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
-          <a target="_blank" href="../../Resume.pdf" className="btn btn-neutral text-base-100 lg:text-xl text-base leading-6 lg:py-4 py-2 lg:px-5 px-3 inline-block h-auto rounded-sm hover:bg-zinc-500 hover:border-zinc-500">
+        <div className='navbar-end'>
+          <a
+            target='_blank'
+            href='../../Daivat_Vadera_Full_Stack_Web_Developer_Resume.pdf'
+            className='btn btn-neutral text-base-100 lg:text-xl text-base leading-6 lg:py-4 py-2 lg:px-5 px-3 inline-block h-auto rounded-sm hover:bg-zinc-500 hover:border-zinc-500'
+          >
             Resume{" "}
-            <span className="ml-2 inline-block vertical-align-middle  ">
+            <span className='ml-2 inline-block vertical-align-middle  '>
               <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+                width='20'
+                height='20'
+                viewBox='0 0 20 20'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
               >
                 <path
-                  d="M17.5 12.5V13.5C17.5 14.9001 17.5 15.6002 17.2275 16.135C16.9878 16.6054 16.6054 16.9878 16.135 17.2275C15.6002 17.5 14.9001 17.5 13.5 17.5H6.5C5.09987 17.5 4.3998 17.5 3.86502 17.2275C3.39462 16.9878 3.01217 16.6054 2.77248 16.135C2.5 15.6002 2.5 14.9001 2.5 13.5V12.5M14.1667 8.33333L10 12.5M10 12.5L5.83333 8.33333M10 12.5V2.5"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                  d='M17.5 12.5V13.5C17.5 14.9001 17.5 15.6002 17.2275 16.135C16.9878 16.6054 16.6054 16.9878 16.135 17.2275C15.6002 17.5 14.9001 17.5 13.5 17.5H6.5C5.09987 17.5 4.3998 17.5 3.86502 17.2275C3.39462 16.9878 3.01217 16.6054 2.77248 16.135C2.5 15.6002 2.5 14.9001 2.5 13.5V12.5M14.1667 8.33333L10 12.5M10 12.5L5.83333 8.33333M10 12.5V2.5'
+                  stroke='white'
+                  strokeWidth='2'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
                 />
               </svg>
             </span>
