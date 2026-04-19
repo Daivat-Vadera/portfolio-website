@@ -65,7 +65,7 @@ const HeroBanner = () => {
                 </div>
                 </div>
                  <div>
-                 <a target="_blank" href="../../Resume.pdf" className="btn btn-neutral text-base-100 lg:text-xl text-base leading-6 lg:py-4 py-2 lg:px-5 px-3 h-auto rounded-sm hover:bg-zinc-500 hover:border-zinc-500 md:hidden inline-block mt-4">
+                 <a target="_blank" href="../../Daivat_Vadera_Full_Stack_Web_Developer_Resume.pdf" className="btn btn-neutral text-base-100 lg:text-xl text-base leading-6 lg:py-4 py-2 lg:px-5 px-3 h-auto rounded-sm hover:bg-zinc-500 hover:border-zinc-500 md:hidden inline-block mt-4">
                             Resume{" "}
                             <span className="ml-2 inline-block vertical-align-middle  ">
                               <svg

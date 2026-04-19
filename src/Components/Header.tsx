@@ -45,32 +45,32 @@ const Header = () => {
           {/* <div className="dropdown">
             <div
               tabIndex={0}
-              role="button"
-              className="btn btn-ghost lg:hidden hover:bg-transparent"
+              role='button'
+              className='btn btn-ghost lg:hidden hover:bg-transparent'
             >
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+                xmlns='http://www.w3.org/2000/svg'
+                className='h-5 w-5'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
               >
                 {" "}
                 <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
+                  d='M4 6h16M4 12h8m-8 6h16'
                 />{" "}
               </svg>
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow gap-2"
+              className='menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow gap-2'
             >
               <li>
                 <a
-                  href="#skills"
+                  href='#skills'
                   onClick={(e) => handleNavClick(e, "skills")}
                   className={
                     activeLink === "skills"
@@ -83,7 +83,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="#experience"
+                  href='#experience'
                   onClick={(e) => handleNavClick(e, "experience")}
                   className={
                     activeLink === "experience"
@@ -96,7 +96,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="#about-me"
+                  href='#about-me'
                   onClick={(e) => handleNavClick(e, "about-me")}
                   className={
                     activeLink === "about-me"
@@ -109,7 +109,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="#projects"
+                  href='#projects'
                   onClick={(e) => handleNavClick(e, "projects")}
                   className={
                     activeLink === "projects"
@@ -122,7 +122,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="#contact-me"
+                  href='#contact-me'
                   onClick={(e) => handleNavClick(e, "contact-me")}
                   className={
                     activeLink === "contact-me"
@@ -226,8 +226,8 @@ const Header = () => {
         <div className='navbar-end'>
           <a
             target='_blank'
-            href='../../Resume.pdf'
-            className={`btn btn-neutral text-base-100 leading-6 h-auto rounded-sm hover:bg-zinc-500 hover:border-zinc-500 md:inline-block hidden transition-all duration-300 ${isScrolled ? "lg:text-lg text-sm lg:py-2 py-1.5 lg:px-4 px-3" : "lg:text-xl text-base lg:py-4 py-2 lg:px-5 px-3"}`}
+            href='../../Daivat_Vadera_Full_Stack_Web_Developer_Resume.pdf'
+            className='btn btn-neutral text-base-100 lg:text-xl text-base leading-6 lg:py-4 py-2 lg:px-5 px-3 inline-block h-auto rounded-sm hover:bg-zinc-500 hover:border-zinc-500'
           >
             Resume{" "}
             <span className='ml-2 inline-block vertical-align-middle  '>
