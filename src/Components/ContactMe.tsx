@@ -107,13 +107,13 @@ const ContactMe = () => {
                 <div className="mt-10 flex flex-col gap-4">
                   <a
                     href="mailto:daivatvadera18@gmail.com"
-                    className="text-3xl font-semibold block"
+                    className="text-xl lg:text-3xl font-semibold block wrap-break-word"
                   >
                     daivatvadera18@gmail.com
                   </a>
                   <a
                     href="tel:+91 9033168588"
-                    className="text-3xl font-semibold block"
+                    className="text-xl lg:text-3xl font-semibold block wrap-break-word"
                   >
                     +91 90331 68588
                   </a>

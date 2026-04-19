@@ -1,11 +1,8 @@
 @import "tailwindcss";
+@source "../../src";
+
 @plugin "daisyui" {
   themes: light --default;
-  root: ":root";
-  include: ;
-  exclude: ;
-  prefix: ;
-  logs: true;
 }
 @theme {
   --font-sora: var(--font-sora);
@@ -24,7 +21,9 @@ body {
   @apply py-[60px];
 }
 .outline-heading {
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow:
+    0 4px 4px rgba(0, 0, 0, 0.25),
+    0 4px 4px rgba(0, 0, 0, 0.25);
   /* -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: var(--Primary-Black, #000); */
 }
@@ -51,6 +50,27 @@ p {
 .content-wrap {
   @apply mt-5;
 }
-.skill-item:hover svg path {
+/* Desktop Hover Effect */
+@media (hover: hover) {
+  .skill-item:hover {
+    @apply bg-black border-black text-white;
+  }
+  .skill-item:hover svg * {
+    fill: white;
+    stroke: white;
+  }
+}
+
+/* Mobile Active state for feedback */
+.skill-item:active {
+  @apply bg-zinc-800 border-zinc-800 text-white;
+}
+.skill-item:active svg * {
   fill: white;
+  stroke: white;
+}
+.navbar-custom-shadow {
+  box-shadow:
+    rgba(0, 0, 0, 0.05) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.02) 0px 4px 6px -2px;
 }

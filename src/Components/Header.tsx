@@ -1,8 +1,23 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { scrollToSection } from "@/utils/smoothScroll";
 const Header = () => {
   const [activeLink, setActiveLink] = useState("");
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
     section: string
@@ -12,9 +27,22 @@ const Header = () => {
   };
   return (
     <div className='container mx-auto fixed top-0 left-0 right-0 z-50 max-w-full'>
-      <div className='navbar bg-base-100 shadow-none px-8 py-6'>
+      <div
+        className={`navbar bg-base-100 px-8 flex justify-center lg:hidden transition-all duration-300 ${isScrolled ? "rounded-b-2xl navbar-custom-shadow py-3" : "py-6"}`}
+      >
+        <a
+          href='#home'
+          className={`btn btn-ghost font-ms-madi hover:bg-transparent hover:outline-none hover:border-none hover:shadow-none transition-all duration-300 ${isScrolled ? "text-3xl xl:text-4xl 2xl:text-5xl" : "text-4xl xl:text-5xl 2xl:text-6xl"}`}
+          onClick={(e) => handleNavClick(e, "home")}
+        >
+          Daivat Vadera
+        </a>
+      </div>
+      <div
+        className={`navbar bg-base-100 px-8 hidden lg:flex transition-all duration-300 ${isScrolled ? "rounded-b-2xl navbar-custom-shadow py-3" : "shadow-none py-6"}`}
+      >
         <div className='navbar-start'>
-          <div className='dropdown'>
+          {/* <div className="dropdown">
             <div
               tabIndex={0}
               role='button'
@@ -106,10 +134,10 @@ const Header = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
           <a
             href='#home'
-            className='btn btn-ghost text-4xl xl:text-5xl 2xl:text-6xl font-ms-madi hover:bg-transparent hover:outline-none hover:border-none hover:shadow-none'
+            className={`btn btn-ghost font-ms-madi hover:bg-transparent hover:outline-none hover:border-none hover:shadow-none transition-all duration-300 ${isScrolled ? "text-3xl xl:text-4xl 2xl:text-5xl" : "text-4xl xl:text-5xl 2xl:text-6xl"}`}
             onClick={(e) => handleNavClick(e, "home")}
           >
             Daivat Vadera
@@ -121,11 +149,13 @@ const Header = () => {
               <a
                 href='#skills'
                 onClick={(e) => handleNavClick(e, "skills")}
-                className={
-                  activeLink === "skills"
-                    ? "xl:text-xl text-base px-4 py-2.5 bg-neutral text-white"
+                className={`${
+                  activeLink === "skills" ? "bg-neutral text-white" : ""
+                } transition-all duration-300 ${
+                  isScrolled
+                    ? "xl:text-lg text-sm px-3 py-1.5"
                     : "xl:text-xl text-base px-4 py-2.5"
-                }
+                }`}
               >
                 Skills
               </a>
@@ -135,11 +165,13 @@ const Header = () => {
               <a
                 href='#experience'
                 onClick={(e) => handleNavClick(e, "experience")}
-                className={
-                  activeLink === "experience"
-                    ? "xl:text-xl text-base px-4 py-2.5 bg-neutral text-white"
+                className={`${
+                  activeLink === "experience" ? "bg-neutral text-white" : ""
+                } transition-all duration-300 ${
+                  isScrolled
+                    ? "xl:text-lg text-sm px-3 py-1.5"
                     : "xl:text-xl text-base px-4 py-2.5"
-                }
+                }`}
               >
                 Experience
               </a>
@@ -148,11 +180,13 @@ const Header = () => {
               <a
                 href='#about-me'
                 onClick={(e) => handleNavClick(e, "about-me")}
-                className={
-                  activeLink === "about-me"
-                    ? "xl:text-xl text-base px-4 py-2.5 bg-neutral text-white"
+                className={`${
+                  activeLink === "about-me" ? "bg-neutral text-white" : ""
+                } transition-all duration-300 ${
+                  isScrolled
+                    ? "xl:text-lg text-sm px-3 py-1.5"
                     : "xl:text-xl text-base px-4 py-2.5"
-                }
+                }`}
               >
                 About Me
               </a>
@@ -161,11 +195,13 @@ const Header = () => {
               <a
                 href='#projects'
                 onClick={(e) => handleNavClick(e, "projects")}
-                className={
-                  activeLink === "projects"
-                    ? "xl:text-xl text-base px-4 py-2.5 bg-neutral text-white"
+                className={`${
+                  activeLink === "projects" ? "bg-neutral text-white" : ""
+                } transition-all duration-300 ${
+                  isScrolled
+                    ? "xl:text-lg text-sm px-3 py-1.5"
                     : "xl:text-xl text-base px-4 py-2.5"
-                }
+                }`}
               >
                 Projects
               </a>
@@ -174,11 +210,13 @@ const Header = () => {
               <a
                 href='#contact-me'
                 onClick={(e) => handleNavClick(e, "contact-me")}
-                className={
-                  activeLink === "contact-me"
-                    ? "xl:text-xl text-base px-4 py-2.5 bg-neutral text-white"
+                className={`${
+                  activeLink === "contact-me" ? "bg-neutral text-white" : ""
+                } transition-all duration-300 ${
+                  isScrolled
+                    ? "xl:text-lg text-sm px-3 py-1.5"
                     : "xl:text-xl text-base px-4 py-2.5"
-                }
+                }`}
               >
                 Contact Me
               </a>
