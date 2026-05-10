@@ -13,7 +13,7 @@ const AboutMe = () => {
             <div className=" w-full lg:w-5/12">
               <Image
                 src={AboutMeImage}
-                alt="About Me"
+                alt="Daivat Vadera - Full Stack Developer About Me"
                 width={525}
                 height={572}
                 className="w-full h-auto"

@@ -8,10 +8,9 @@ const HeroBanner = () => {
           <div className="flex items-center justify-center flex-col lg:flex-row px-8">
             <div className="w-full lg:w-5/12 order-2 lg:order-1 mt-12 lg:mt-0">
               <div className="title">
-                <h1 className="font-normal text-[28px] sm:text-5xl  leading-8 sm:leading-14">
+                <h1 className="font-normal text-[28px] sm:text-5xl leading-8 sm:leading-14">
                   Hi, I&apos;m <span className="font-extrabold">Daivat Vadera.</span>
-                </h1>
-                <h1 className="font-normal text-[28px] sm:text-5xl mt-5 leading-8 sm:leading-14">
+                  <br className="hidden sm:block" />
                   <span className="font-extrabold">Full Stack</span>{" "}
                   <div className="relative inline-block">
                     <span className="font-extrabold outline-heading text-stroke ">
@@ -91,7 +90,7 @@ const HeroBanner = () => {
             <div className="w-full lg:w-7/12 order-1 lg:order-2">
               <Image
                 src={HeroBannerImage}
-                alt="Hero Banner"
+                alt="Daivat Vadera - Full Stack Web Developer Hero Illustration"
                 width={795}
                 height={596}
                 className="w-full h-auto"
